@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select a Hobby</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("searchBar").addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          const query = this.value.trim().toLowerCase();
+          const routes = {
+            hiking: "discussion.html",
+            cycling: "discussion-cycling.html",
+            gaming: "discussion-gaming.html",
+            piano: "discussion-piano.html",
+            painting: "discussion-painting.html"
+          };
+          if (routes[query]) {
+            window.location.href = routes[query];
+          } else {
+            alert("Hobby not found. Try: Hiking, Cycling, Gaming, Piano, or Painting.");
+          }
+        }
+      });
+    });
+  </script>
+</head>
+<body class="dark-theme">
+  <header class="nav-bar">
+    <div class="logo">Hobby <strong>Buddy</strong></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="hobbies.html" class="active">Hobbies</a>
+      <a href="form.html">Join Us</a>
+      <button class="login" onclick="location.href='form.html'">Login</button>
+      <button class="create" onclick="location.href='form.html'">Create Account</button>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="search-section">
+      <h1>Select a Hobby</h1>
+      <input type="text" placeholder="Search hobbies..." id="searchBar" class="search-input">
+    </section>
+    <section class="card-container">
+      <div class="hobby-card"><a href="discussion.html"><img src="media/hiking.png" alt="Hiking"><p>Hiking</p></a></div>
+      <div class="hobby-card"><a href="discussion-cycling.html"><img src="media/cycling.png" alt="Cycling"><p>Cycling</p></a></div>
+      <div class="hobby-card"><a href="discussion-gaming.html"><img src="media/gaming.png" alt="Gaming"><p>Gaming</p></a></div>
+      <div class="hobby-card"><a href="discussion-piano.html"><img src="media/piano.png" alt="Piano"><p>Piano</p></a></div>
+      <div class="hobby-card"><a href="discussion-painting.html"><img src="media/painting.png" alt="Painting"><p>Painting</p></a></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Hobby Buddy</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Hiking Discussions</title>
+      <link rel="stylesheet" href="css/styles.css">
+      <script src="js/scripts.js" defer></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const username = localStorage.getItem("hobbyBuddyUser") || "You";
+          const form = document.querySelector("form");
+          const input = form.querySelector("input");
+          const chatBox = document.querySelector(".chat-box");
+    
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const msg = input.value.trim();
+            if (msg) {
+              const p = document.createElement("p");
+              p.innerHTML = `<strong>${username}:</strong> ${msg}`;
+              chatBox.appendChild(p);
+              input.value = "";
+            }
+          });
+        });
+      </script>
+    </head>
+    <body class="dark-theme">
+      <header class="nav-bar">
+        <div class="logo">Hobby <strong>Buddy</strong></div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="hobbies.html">Hobbies</a>
+          <a href="form.html">Join Us</a>
+          <button class="login" onclick="location.href='form.html'">Login</button>
+          <button class="create" onclick="location.href='form.html'">Create Account</button>
+        </nav>
+      </header>
+<body>
+  <header>
+    <h1>Hiking Hobby Board</h1>
+  </header>
+  <main>
+    <h2>Live Chat</h2>
+    <div class="chat-box">
+      <p><strong>Alice:</strong> Anyone hiking this weekend?</p>
+      <p><strong>Bob:</strong> Yes! Let’s meet at Blue Trail at 10am.</p>
+    </div>
+    <form>
+      <input type="text" placeholder="Type your message...">
+      <button type="submit">Send</button>
+    </form>
+    <h3>Upcoming Meetups</h3>
+    <table border="1">
+      <tr><th>Date</th><th>Activity</th><th>Location</th></tr>
+      <tr><td>April 28</td><td>Mountain Hike</td><td>Blue Trail</td></tr>
+      <tr><td>May 5</td><td>Sunset Trail Run</td><td>Sunset Park</td></tr>
+    </table>
+  </main>
+  <footer>
+    <p>&copy; 2025 Hobby Buddy</p>
+  </footer>
+</body>
+</html>
