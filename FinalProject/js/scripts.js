@@ -24,4 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
       alert(`You selected:\nState: ${state}\nCity: ${city}\nInterest: ${interest || 'N/A'}\nMessage: ${message || 'N/A'}`);
     });
   }
+
+  window.addEventListener('load', function () {
+  alert("This website has limited functionality and some parts have broken.");
+});
 });
