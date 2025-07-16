@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+  }
+  header, footer {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  nav .active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  input, select, button {
+    margin: 10px;
+    padding: 8px;
+    width: 200px;
+  }
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid #444;
+    padding: 10px;
+  }
+  .chat-box {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  .hobby-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  .hobby-table img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+  .hobby-table td {
+    padding: 20px;
+  }
+  .intro-section {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 40px;
+  }
+  .intro-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  .intro-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .form-section {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+    background: #555;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-section select,
+  .form-section textarea,
+  .form-section button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+  }
+  .submit-button {
+    background: red;
+    color: white;
+    cursor: pointer;
+  }
+  body.dark-theme {
+    background-color: #444;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  .nav-bar {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  .nav-bar .logo {
+    font-size: 1.5em;
+  }
+  .nav-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .nav-links .active {
+    border-bottom: 2px solid red;
+  }
+  .login, .create {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .container {
+    padding: 40px;
+  }
+  .search-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .search-input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .hobby-card {
+    background: #666;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    transition: background 0.3s;
+  }
+  .hobby-card:hover {
+    background: #888;
+  }
+  .hobby-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 40px;
+  }
+  .chat-section {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.chat-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.chat-box {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 150px;
+  margin-bottom: 10px;
+}
+.chat-box p {
+  margin: 5px 0;
+}
+.chat-section form {
+  display: flex;
+  gap: 10px;
+}
+.chat-section input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.table-section {
+  max-width: 600px;
+  margin: auto;
+  background: #555;
+  padding: 20px;
+  border-radius: 10px;
+}
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+.table-section th,
+.table-section td {
+  padding: 10px;
+  border-bottom: 1px solid #888;
+}
+.table-section th {
+  background: #444;
+}

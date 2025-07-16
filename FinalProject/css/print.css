@@ -1,1 +1,13 @@
-
+body {
+  background: white;
+  color: black;
+}
+header, footer, nav, button {
+  display: none;
+}
+main {
+  font-size: 12pt;
+}
+table {
+  page-break-inside: avoid;
+}
