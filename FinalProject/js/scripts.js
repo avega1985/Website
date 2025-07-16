@@ -26,6 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   window.addEventListener('load', function () {
-  alert("This website has limited functionality and some parts have broken.");
-});
+  if (!localStorage.getItem('hasSeenWarning')) {
+      alert("This website has limited functionality and some parts have broken.");
+      localStorage.setItem('hasSeenWarning', 'true');
+    }}
+  );
 });
