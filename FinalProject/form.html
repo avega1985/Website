@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login / Create Account</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js" defer></script>
+</head>
+<body class="dark-theme">
+  <header class="nav-bar">
+    <div class="logo">Hobby <strong>Buddy</strong></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="form.html">Join Us</a>
+      <button class="login" onclick="location.href='form.html'">Login</button>
+      <button class="create" onclick="location.href='form.html'">Create Account</button>
+    </nav>
+  </header>
+<body>
+  <header>
+    <h1>Join Hobby Buddy</h1>
+  </header>
+  <main>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="hobby">Select Hobby:</label>
+      <select id="hobby" name="hobby">
+        <option>Hiking</option>
+        <option>Gaming</option>
+        <option>Painting</option>
+        <option>Piano</option>
+        <option>Cycling</option>
+      </select>
+
+      <label><input type="checkbox" name="notify">Notify me about new posts</label><br>
+
+      <input type="submit" value="Sign Up">
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 Hobby Buddy</p>
+  </footer>
+</body>
+</html>
