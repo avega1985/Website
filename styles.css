@@ -63,7 +63,8 @@ nav .active {
 }
 .dropdown-content {
   position: absolute;
-  top: 200%;
+  z-index: 10;
+  top: 181%;
   background-color: #333;
   min-width: 150px;
   opacity: 0;
