@@ -12,10 +12,10 @@
     line-height: 1.6;
 }
 .projects {
-  padding-left: 150px;
+  text-align: center;
 }
 .arrows {
-  padding-left: 300px;
+  text-align: center;
 }
 nav a {
   margin: 0 10px;
@@ -126,8 +126,14 @@ body {
   background-color:rgb(255, 255, 255);
 }
 .link {
-  padding-left: 380px;
+  text-align: center;  
+  padding-top: 5px;
   padding-bottom: 5px;
+}
+.intro-article-section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .AboutMe {
   padding-left: 40px;
