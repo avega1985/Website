@@ -19,23 +19,34 @@
       <a href="project3.html">How-To Project</a>
       <a href="FinalProject/index.html"target="_blank" rel="noopener noreferrer">Website Prototype</a>
       <a href="https://avega1985.github.io/MirandaWebsite/"target="_blank" rel="noopener noreferrer">Portfolio Website</a>
-         </div>
+    </div>
   </div>
-      <a href="article3.html"class="active">Articles</a>
+      <a href="articles.html"class="active">Articles</a>
       <a href="games.html">Games</a>
     </nav>
   </header>
 <main class="container">
-  <section>
-    <h1>Article 3 of 4</h1>
-    <iframe class="intro-article-section" src="Media/article3.pdf#toolbar=0" width="900" height="660" style="border:1px solid black;"></iframe>
-  </section>
-    <div class="link">
-      <a href="https://psf.app/nfl/2rdgqyyf6hrlss8enrqct3uz86vp94"target="_blank" rel="noopener noreferrer">Link to Article</a>
+  <div>
+    <ul class="buttons">
+      <li class="button active" data-tab="pdf1">Article 1</li>
+      <li class="button" data-tab="pdf2">Article 2</li>
+      <li class="button" data-tab="pdf3">Article 3</li>
+      <li class="button" data-tab="pdf4">Article 4</li>
+    </ul>
+
+    <div>
+      <div id="pdf1" class="tab-content active">
+        <embed src="Media/article1.pdf#toolbar=0" width="100%" height="660px"/>
+      </div>
+      <div id="pdf2" class="tab-content">
+        <embed src="Media/article2.pdf#toolbar=0" width="100%" height="660px"/>
+      </div>
+      <div id="pdf3" class="tab-content">
+        <embed src="Media/article3.pdf#toolbar=0" width="100%" height="660px"/>
+      </div>
+      <div id="pdf4" class="tab-content">
+        <embed src="Media/article4.pdf#toolbar=0" width="100%" height="660px"/>
+      </div>
     </div>
-  <section class ="arrows">
-    <a href="article2.html">&larr; Previous Article</a>
-    &nbsp
-    <a href="article4.html">Next Article &rarr;</a>
-  </section>
+  </div>
 </main>

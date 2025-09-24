@@ -19,3 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1000);
   });
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const Buttons = document.querySelectorAll('.button');
+  const Contents = document.querySelectorAll('.tab-content');
+
+  Buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelector('.button.active').classList.remove('active');
+      document.querySelector('.tab-content.active').classList.remove('active');
+
+      button.classList.add('active');
+      const targetTabId = button.dataset.tab;
+      document.getElementById(targetTabId).classList.add('active');
+    });
+  });
+});
