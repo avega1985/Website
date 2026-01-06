@@ -186,7 +186,7 @@ body {
   border: 1px solid #ccc;
   padding: 15px;
   position: relative;
-  top: 20px
+  top: 30px
 }
 .tab-content.active {
   display:block;
