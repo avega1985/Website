@@ -59,7 +59,6 @@ function loadFromURL() {
     document.getElementById("projectFrame").src =
       projectData[project].src;
   } else {
-    // Default fallback
     document.getElementById("projectTitle").textContent =
       "How-To Project";
 
