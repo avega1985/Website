@@ -34,3 +34,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+const projectData = {
+  1: {
+    title: "Magazine Mock Up",
+    src: "Media/W7Design - Vega.pdf#toolbar=0"
+  },
+  2: {
+    title: "Website Mock Up",
+    src: "Media/Final Project.pdf#toolbar=0"
+  },
+  3: {
+    title: "How-To Project",
+    src: "Media/How-To Document - Vega.pdf#toolbar=0"
+  }
+};
+function loadFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  const project = params.get("project");
+
+  if (project && projectData[project]) {
+    document.getElementById("projectTitle").textContent =
+      projectData[project].title;
+
+    document.getElementById("projectFrame").src =
+      projectData[project].src;
+  } else {
+    // Default fallback
+    document.getElementById("projectTitle").textContent =
+      "How-To Project";
+
+    document.getElementById("projectFrame").src =
+      projectData.howto.src;
+  }
+}
+
+loadFromURL();
