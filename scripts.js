@@ -67,5 +67,4 @@ function loadFromURL() {
       projectData.howto.src;
   }
 }
-
 loadFromURL();
