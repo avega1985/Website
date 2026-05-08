@@ -130,31 +130,27 @@ ul {
 li {
   line-height:1.176;
 }
-#linkedin-image {
-  width: 60px;
-}
-#github-image {
+.github {
   position: relative;
   left:30px;
   width: 60px;
 }
+.contact-section p {
+  display: flex;
+}
+.fas.fa-phone, .fas.fa-envelope {
+  margin-right: 8px;
+}
+
 body {
   background-image: linear-gradient(to bottom, white, rgb(144, 220, 243));
   min-height: 99vh;
-}
-.AboutMe h1 {
-  position: relative;
-  margin-left: 40px;
 }
 .intro-games-section {
   position: relative;
   left: 390px
 }
-.intro-project-section h1{
-  position: relative;
-  margin-left:40px;
-}
-.games h1 {
+.intro-project-section h1, .games h1, .AboutMe h1{
   position: relative;
   margin-left:40px;
 }
